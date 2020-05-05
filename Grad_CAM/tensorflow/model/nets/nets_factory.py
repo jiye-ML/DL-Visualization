@@ -28,7 +28,7 @@ import tensorflow as tf
 #from nets import mobilenet_v1
 #from nets import overfeat
 #from nets import resnet_v1
-from model.nets import resnet_v2
+from Grad_CAM.tensorflow.model.nets import resnet_v2
 #from nets import vgg
 #from nets.nasnet import nasnet
 

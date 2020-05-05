@@ -148,10 +148,10 @@ class GradCAM(object):
 
 
 def main(_):
-    grad_cam = GradCAM(image_file_name="./demo/cat.jpg", result_size=300, result_file_name="./demo/output.png",
+    grad_cam = GradCAM(image_file_name="demo/cat.jpg", result_size=300, result_file_name="tensorflow/demo/output.png",
                        num_classes=1001, model_name="resnet_v2_50",
                        layer_conv_name="PrePool", layer_prediction_name="predictions", layer_logits_name="Logits",
-                       label_file_name="./data/imagenet/labels.txt", checkpoint_path="./ckpt/resnet_v2_50.ckpt")
+                       label_file_name="data/imagenet/labels.txt", checkpoint_path="ckpt/resnet_v2_50.ckpt")
     grad_cam.run()
     pass
 
